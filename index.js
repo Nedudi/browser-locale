@@ -13,5 +13,9 @@ module.exports = function() {
     lang = navigator.language
   }
   
+  if(lang.length) {
+    lang = lang.substr(0,2)
+   }
+  
   return lang
 }
